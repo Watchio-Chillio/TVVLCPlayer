@@ -42,7 +42,7 @@ class ScrubbingPositionController: NSObject, PositionController {
                 return
             }
 
-            let value = selectedTime.value.doubleValue
+            let value = selectedTime.value!.doubleValue
             scrubbingPositionConstraint.constant = round(CGFloat(value / totalTime) * transportBar.bounds.width)
             scrubbingLabel.text = selectedTime.stringValue
         }
@@ -78,7 +78,7 @@ class ScrubbingPositionController: NSObject, PositionController {
 
         switch sender.state {
         case .cancelled:
-            selectedTime = player.time!
+            selectedTime = player.time
             fallthrough
         case .ended:
             let velocity = sender.velocity(in: nil)

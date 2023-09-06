@@ -11,7 +11,7 @@ import TVVLCKit
 
 extension VLCMediaPlayer {
     var totalTime: VLCTime? {
-        return time - remainingTime
+        return time - remainingTime!
     }
 }
 

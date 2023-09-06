@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		3F7CC78A21D6992E0094B074 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7CC78921D6992E0094B074 /* libz.tbd */; };
 		3F7CC78E21D699830094B074 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7CC78D21D699830094B074 /* libbz2.tbd */; };
 		3F7CC79021D699980094B074 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7CC78F21D699980094B074 /* libc++.tbd */; };
-		3F7CC79221D699AF0094B074 /* TVVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7CC79121D699AF0094B074 /* TVVLCKit.framework */; };
 		3F7CC7A421D6A9550094B074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CC7A321D6A9550094B074 /* ViewController.swift */; };
 		3F7CC7A721D6A9550094B074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CC7A521D6A9550094B074 /* Main.storyboard */; };
 		3F7CC7A921D6A9570094B074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CC7A821D6A9570094B074 /* Assets.xcassets */; };
@@ -48,6 +47,7 @@
 		3FE3F40A21D813D700F8C472 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3F40921D813D700F8C472 /* AudioViewController.swift */; };
 		3FE3F40C21D8151300F8C472 /* SubtitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3F40B21D8151300F8C472 /* SubtitlesViewController.swift */; };
 		3FE3F41121D835A200F8C472 /* SelectableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3F41021D835A200F8C472 /* SelectableTableViewCell.swift */; };
+		CA3256A12AA8CAE700F4D1D3 /* TVVLCKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3256A02AA8CAE700F4D1D3 /* TVVLCKit.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,6 @@
 		3F7CC78B21D699380094B074 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F7CC78D21D699830094B074 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		3F7CC78F21D699980094B074 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		3F7CC79121D699AF0094B074 /* TVVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVVLCKit.framework; path = Carthage/Build/tvOS/TVVLCKit.framework; sourceTree = "<group>"; };
 		3F7CC79F21D6A9550094B074 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7CC7A321D6A9550094B074 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F7CC7A621D6A9550094B074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +123,7 @@
 		3FE3F40921D813D700F8C472 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		3FE3F40B21D8151300F8C472 /* SubtitlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesViewController.swift; sourceTree = "<group>"; };
 		3FE3F41021D835A200F8C472 /* SelectableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableTableViewCell.swift; sourceTree = "<group>"; };
+		CA3256A02AA8CAE700F4D1D3 /* TVVLCKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TVVLCKit.xcframework; path = Carthage/Build/TVVLCKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7CC79221D699AF0094B074 /* TVVLCKit.framework in Frameworks */,
 				3F7CC77421D698C20094B074 /* AudioToolbox.framework in Frameworks */,
 				3F7CC77021D698320094B074 /* AVFoundation.framework in Frameworks */,
+				CA3256A12AA8CAE700F4D1D3 /* TVVLCKit.xcframework in Frameworks */,
 				3F7CC77221D6985C0094B074 /* VideoToolbox.framework in Frameworks */,
 				3F7CC77C21D698E10094B074 /* CoreMedia.framework in Frameworks */,
 				3F8FF71121D6438C00A86CDF /* Foundation.framework in Frameworks */,
@@ -232,8 +232,8 @@
 		3F8FF6F521D63DBC00A86CDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA3256A02AA8CAE700F4D1D3 /* TVVLCKit.xcframework */,
 				3F7CC7BD21D6B1310094B074 /* Modules */,
-				3F7CC79121D699AF0094B074 /* TVVLCKit.framework */,
 				3F7CC78F21D699980094B074 /* libc++.tbd */,
 				3F7CC78D21D699830094B074 /* libbz2.tbd */,
 				3F7CC78B21D699380094B074 /* UIKit.framework */,
@@ -315,7 +315,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F19D42721288C4C009E68AF /* Build configuration list for PBXNativeTarget "TVVLCPlayer" */;
 			buildPhases = (
-				3F7CC7BF21D6B1420094B074 /* Copy modulemap in VLC Kit framework */,
 				3F19D41A21288C4C009E68AF /* Headers */,
 				3F19D41B21288C4C009E68AF /* Sources */,
 				3F19D41C21288C4C009E68AF /* Frameworks */,
@@ -427,22 +426,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		3F7CC7BF21D6B1420094B074 /* Copy modulemap in VLC Kit framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Modules",
-			);
-			name = "Copy modulemap in VLC Kit framework";
-			outputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/TVVLCKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cp -pr $SCRIPT_INPUT_FILE_0 $SCRIPT_OUTPUT_FILE_0/Modules\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

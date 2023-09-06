@@ -62,7 +62,7 @@ class InfoViewController: UIViewController {
         if let title = mediaDict?[VLCMetaInformationTitle] as? String {
            titleLabel.text = title
         } else {
-           titleLabel.text = player.media?.url.absoluteString
+            titleLabel.text = player.media?.url?.absoluteString
         }
     }
 
@@ -93,7 +93,7 @@ class InfoViewController: UIViewController {
     }
 
     func configureDescription() {
-        let mediaDict = player.media.metaDictionary
+        let mediaDict = player.media!.metaDictionary
         let texts = [VLCMetaInformationDescription, VLCMetaInformationCopyright].compactMap { mediaDict[$0] as? String  }
 
         textView.text = texts.joined(separator: "\n")
